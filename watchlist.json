@@ -1,0 +1,44 @@
+{
+  "GOLDBEES.NS": {
+    "name": "Nippon India ETF Gold BeES",
+    "target_price": 62,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": true
+  },
+  "SILVERBEES.NS": {
+    "name": "Nippon India Silver ETF",
+    "target_price": 82,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": true
+  },
+  "RELIANCE.NS": {
+    "name": "Reliance Industries",
+    "target_price": 1250,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  },
+  "TCS.NS": {
+    "name": "Tata Consultancy Services",
+    "target_price": 3800,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  },
+  "HDFCBANK.NS": {
+    "name": "HDFC Bank",
+    "target_price": 1600,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  },
+  "TATAMOTORS.NS": {
+    "name": "Tata Motors",
+    "target_price": 850,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  }
+}
