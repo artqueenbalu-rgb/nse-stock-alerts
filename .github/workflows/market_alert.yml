@@ -1,0 +1,25 @@
+name: NSE Stock, Gold BeES & Silver BeES App Alert
+
+on:
+  schedule:
+    - cron: '*/30 4-10 * * 1-5'
+    - cron: '15 10 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  nse-price-alert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Scan NSE Prices & Push to App
+        env:
+          NTFY_TOPIC: "nse-alerts-in-3915"
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python nse_dip_predictor.py
