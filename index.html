@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSE Buy-Zone &amp; GitHub Push Alert App — Indian Stocks, Gold BeES &amp; Silver BeES</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #090d16;
+      color: #f1f5f9;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(51, 65, 85, 0.6);
+      backdrop-filter: blur(12px);
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.9; }
+      70% { transform: scale(1.25); opacity: 0; }
+      100% { transform: scale(0.95); opacity: 0; }
+    }
+    .live-dot::after {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 9999px;
+      background-color: #10b981;
+      animation: pulse-ring 2s infinite;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.bottom-4{bottom:1rem}.left-3{left:0.75rem}.right-4{right:1rem}.top-0{top:0px}.top-2{top:0.5rem}.z-30{z-index:30}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.ml-auto{margin-left:auto}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-4{height:1rem}.h-6{height:1.5rem}.max-h-72{max-height:18rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-4{width:1rem}.w-6{width:1.5rem}.w-full{width:100%}.w-28{width:7rem}.max-w-6xl{max-width:72rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.overflow-x-auto{overflow-x:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-emerald-400{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.border-emerald-500\/30{border-color:rgb(16 185 129 / 0.3)}.border-emerald-500\/40{border-color:rgb(16 185 129 / 0.4)}.border-emerald-500\/60{border-color:rgb(16 185 129 / 0.6)}.border-purple-500\/40{border-color:rgb(168 85 247 / 0.4)}.border-sky-500\/30{border-color:rgb(14 165 233 / 0.3)}.border-sky-500\/40{border-color:rgb(14 165 233 / 0.4)}.border-slate-400\/30{border-color:rgb(148 163 184 / 0.3)}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/80{border-color:rgb(51 65 85 / 0.8)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-slate-900\/80{border-color:rgb(15 23 42 / 0.8)}.border-transparent{border-color:transparent}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-rose-500\/30{border-color:rgb(244 63 94 / 0.3)}.border-slate-800\/60{border-color:rgb(30 41 59 / 0.6)}.border-l-emerald-500{--tw-border-opacity:1;border-left-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.bg-amber-500\/15{background-color:rgb(245 158 11 / 0.15)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-emerald-500\/15{background-color:rgb(16 185 129 / 0.15)}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-purple-500\/20{background-color:rgb(168 85 247 / 0.2)}.bg-rose-500\/20{background-color:rgb(244 63 94 / 0.2)}.bg-sky-500\/15{background-color:rgb(14 165 233 / 0.15)}.bg-sky-500\/20{background-color:rgb(14 165 233 / 0.2)}.bg-slate-400\/15{background-color:rgb(148 163 184 / 0.15)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.bg-slate-950\/90{background-color:rgb(2 6 23 / 0.9)}.bg-rose-500\/15{background-color:rgb(244 63 94 / 0.15)}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-slate-950\/50{background-color:rgb(2 6 23 / 0.5)}.bg-slate-900\/95{background-color:rgb(15 23 42 / 0.95)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-teal-600{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-2{padding:0.5rem}.p-8{padding:2rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.pl-16{padding-left:4rem}.pr-3{padding-right:0.75rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:JetBrains Mono, monospace}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[10px\]{font-size:10px}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-emerald-200{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-purple-300{--tw-text-opacity:1;color:rgb(216 180 254 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-rose-300{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-sky-300{--tw-text-opacity:1;color:rgb(125 211 252 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.placeholder-slate-500::placeholder{--tw-placeholder-opacity:1;color:rgb(100 116 139 / var(--tw-placeholder-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-900\/40{--tw-shadow-color:rgb(6 78 59 / 0.4);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-950\/50{--tw-shadow-color:rgb(2 44 34 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-emerald-500\/30 *::selection{background-color:rgb(16 185 129 / 0.3)}.selection\:text-emerald-200 *::selection{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.selection\:bg-emerald-500\/30::selection{background-color:rgb(16 185 129 / 0.3)}.selection\:text-emerald-200::selection{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.hover\:bg-amber-500\/25:hover{background-color:rgb(245 158 11 / 0.25)}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500\/25:hover{background-color:rgb(16 185 129 / 0.25)}.hover\:bg-emerald-500\/30:hover{background-color:rgb(16 185 129 / 0.3)}.hover\:bg-purple-500\/30:hover{background-color:rgb(168 85 247 / 0.3)}.hover\:bg-sky-500\/25:hover{background-color:rgb(14 165 233 / 0.25)}.hover\:bg-sky-500\/30:hover{background-color:rgb(14 165 233 / 0.3)}.hover\:bg-slate-400\/25:hover{background-color:rgb(148 163 184 / 0.25)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-500\/30:hover{background-color:rgb(244 63 94 / 0.3)}.hover\:text-rose-300:hover{--tw-text-opacity:1;color:rgb(253 164 175 / var(--tw-text-opacity, 1))}.hover\:text-slate-200:hover{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-emerald-400:focus{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.focus\:border-emerald-500:focus{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-0:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:w-64{width:16rem}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:flex-nowrap{flex-wrap:nowrap}.sm\:gap-3{gap:0.75rem}.sm\:p-5{padding:1.25rem}.sm\:px-0{padding-left:0px;padding-right:0px}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}}</style></head>
+<body class="min-h-screen flex flex-col selection:bg-emerald-500/30 selection:text-emerald-200">
+
+  <!-- Top Header -->
+  <header class="sticky top-0 z-30 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-900/40">
+          <svg class="w-6 h-6 text-slate-950" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-base sm:text-lg font-bold tracking-tight text-white">NSE Buy-Zone Configurator</h1>
+            <span class="px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">GitHub Powered</span>
+          </div>
+          <p class="text-xs text-slate-400">You configure Symbol, Name &amp; Target ₹ • GitHub fetches NSE prices, 52W Lows &amp; sends alerts</p>
+        </div>
+      </div>
+
+      <!-- Status & GitHub Fetch Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div id="sseStatusBadge" class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs">
+          <span id="sseStatusDot" class="relative w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
+          <span id="sseStatusText" class="text-slate-300 font-medium">Listening: nse-alerts-in-3915</span>
+        </div>
+
+        <button id="soundToggleBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700/80 text-xs font-medium text-slate-200 flex items-center gap-1.5 transition" title="Toggle Sound When GitHub Alert Arrives">
+          <span id="soundIcon">🔔</span>
+          <span id="soundLabel" class="hidden sm:inline">Sound On</span>
+        </button>
+
+        <button id="fetchFromGitHubTopBtn" type="button" class="px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs flex items-center gap-1.5 shadow-md shadow-emerald-950/50 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+          </svg>
+          <span>Fetch Latest from GitHub</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="max-w-6xl mx-auto px-4 flex items-center gap-1 border-t border-slate-900/80 overflow-x-auto">
+      <button type="button" data-tab="watchlist" class="nav-tab px-4 py-2.5 text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap transition">
+        <span>📊 Configure Watchlist &amp; Target ₹</span>
+        <span id="watchlistCountBadge" class="px-1.5 py-0.5 text-[11px] rounded-full bg-emerald-500/20 text-emerald-300">6</span>
+      </button>
+      <button type="button" data-tab="alerts" class="nav-tab px-4 py-2.5 text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap transition">
+        <span>📲 Alerts Received from GitHub</span>
+        <span id="alertCountBadge" class="px-1.5 py-0.5 text-[11px] rounded-full bg-rose-500/20 text-rose-300">0</span>
+      </button>
+      <button type="button" data-tab="github" class="nav-tab px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 border-emerald-400 text-emerald-400 flex items-center gap-2 whitespace-nowrap transition">
+        <span>🔗 GitHub Sync &amp; 1-Click Deploy</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 py-6 space-y-6">
+
+    <!-- KPI Summary Banner -->
+    <section class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="glass-card rounded-xl p-3.5">
+        <p class="text-xs text-slate-400">Configured NSE Shares</p>
+        <div class="mt-1 flex items-baseline justify-between">
+          <span id="statTotalStocks" class="text-xl sm:text-2xl font-bold text-white">6</span>
+          <span class="text-[11px] text-emerald-400 font-mono">.NS Exchange</span>
+        </div>
+      </div>
+      <div class="glass-card rounded-xl p-3.5">
+        <p class="text-xs text-slate-400">Below Target ₹ (GitHub)</p>
+        <div class="mt-1 flex items-baseline justify-between">
+          <span id="statInTargetZone" class="text-xl sm:text-2xl font-bold text-rose-400">0</span>
+          <span class="text-[11px] text-rose-300">Fetched from GitHub</span>
+        </div>
+      </div>
+      <div class="glass-card rounded-xl p-3.5">
+        <p class="text-xs text-slate-400">Near 52W Low / &lt;200-DMA</p>
+        <div class="mt-1 flex items-baseline justify-between">
+          <span id="statNearLowOrDma" class="text-xl sm:text-2xl font-bold text-amber-400">0</span>
+          <span class="text-[11px] text-amber-300">Fetched from GitHub</span>
+        </div>
+      </div>
+      <div class="glass-card rounded-xl p-3.5">
+        <p class="text-xs text-slate-400">GitHub Push Topic</p>
+        <div class="mt-1 flex items-center justify-between gap-1">
+          <span id="statTopicDisplay" class="text-xs sm:text-sm font-mono font-semibold text-sky-400 truncate">nse-alerts-in-3915</span>
+          <button id="copyTopicQuickBtn" type="button" class="text-[11px] px-2 py-0.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 transition">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TAB 1: WATCHLIST & TARGET PRICES ================= -->
+    <section id="tab-watchlist" class="space-y-6 hidden">
+
+      <!-- Clean 3-Field Configuration Card (ONLY Symbol, Share Name, Target Price) -->
+      <div class="glass-card rounded-2xl p-4 sm:p-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <h2 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
+              <span>➕ Add or Update Share in Your Watchlist</span>
+            </h2>
+            <p class="text-xs text-slate-400">
+              Enter only the <strong>NSE Symbol</strong>, <strong>Share / ETF Name</strong>, and your <strong>Target Alert Price (₹)</strong>. Current price, 52-week low, and averages are fetched automatically by GitHub.
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-1.5">
+            <span class="text-[11px] text-slate-400 mr-1">Quick Fill:</span>
+            <button type="button" data-preset="GOLDBEES|Nippon India ETF Gold BeES|62.00" class="preset-chip px-2.5 py-1 rounded-full text-xs font-medium bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/30 transition">🪙 GOLDBEES</button>
+            <button type="button" data-preset="SILVERBEES|Nippon India Silver ETF|82.00" class="preset-chip px-2.5 py-1 rounded-full text-xs font-medium bg-slate-400/15 hover:bg-slate-400/25 text-slate-200 border border-slate-400/30 transition">🥈 SILVERBEES</button>
+            <button type="button" data-preset="INFY|Infosys Limited|1750.00" class="preset-chip px-2.5 py-1 rounded-full text-xs font-medium bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 border border-sky-500/30 transition">INFY</button>
+            <button type="button" data-preset="ITC|ITC Limited|460.00" class="preset-chip px-2.5 py-1 rounded-full text-xs font-medium bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 border border-sky-500/30 transition">ITC</button>
+            <button type="button" data-preset="SBIN|State Bank of India|780.00" class="preset-chip px-2.5 py-1 rounded-full text-xs font-medium bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 border border-sky-500/30 transition">SBIN</button>
+            <button type="button" data-preset="ICICIBANK|ICICI Bank Limited|1220.00" class="preset-chip px-2.5 py-1 rounded-full text-xs font-medium bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 border border-sky-500/30 transition">ICICIBANK</button>
+          </div>
+        </div>
+
+        <form id="addStockForm" class="grid grid-cols-1 sm:grid-cols-4 gap-3 pt-2">
+          <div>
+            <label for="inputSymbol" class="block text-[11px] font-medium text-slate-300 mb-1">1. NSE Symbol *</label>
+            <input id="inputSymbol" type="text" required="" placeholder="e.g. GOLDBEES or INFY" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 font-mono uppercase">
+          </div>
+          <div>
+            <label for="inputName" class="block text-[11px] font-medium text-slate-300 mb-1">2. Share / ETF Name</label>
+            <input id="inputName" type="text" placeholder="e.g. Nippon Gold BeES" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label for="inputTargetPrice" class="block text-[11px] font-semibold text-emerald-400 mb-1">3. Target Alert Price (₹) *</label>
+            <input id="inputTargetPrice" type="number" step="0.05" required="" placeholder="e.g. 62.00" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-emerald-500/60 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 font-mono">
+          </div>
+          <div class="flex items-end">
+            <button type="submit" class="w-full py-2 px-4 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm transition shadow-md shadow-emerald-950/50">
+              Save &amp; Sync to GitHub
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Filter & Sync Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <button type="button" data-filter="all" class="stock-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">All Shares</button>
+          <button type="button" data-filter="triggered" class="stock-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800">Triggered by GitHub</button>
+          <button type="button" data-filter="bees" class="stock-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800">Gold &amp; Silver BeES</button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button id="syncWatchlistQuickBtn" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 text-xs font-semibold transition">
+            ⬆️ Push List Changes to GitHub
+          </button>
+          <button id="resetDefaultWatchlistBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 border border-slate-800 text-xs transition">
+            Reset Default List
+          </button>
+        </div>
+      </div>
+
+      <!-- Watchlist Grid -->
+      <div id="watchlistGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"><div class="glass-card rounded-2xl p-4 border border-slate-800 flex flex-col justify-between transition">
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">GOLDBEES</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold bg-slate-800 text-slate-300 border-slate-700">⏳ Waiting for GitHub Scan</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Nippon India ETF Gold BeES</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono text-slate-400">Pending GitHub Scan</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹62.00</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+            </div>
+
+            <div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹62.00</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="62" data-target-input="GOLDBEES.NS" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+              <button type="button" data-save-target="GOLDBEES.NS" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="GOLDBEES.NS" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="GOLDBEES.NS|alert_below_52w_low" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="GOLDBEES.NS|alert_below_200dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="GOLDBEES.NS|alert_below_50dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        </div><div class="glass-card rounded-2xl p-4 border border-slate-800 flex flex-col justify-between transition">
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">SILVERBEES</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold bg-slate-800 text-slate-300 border-slate-700">⏳ Waiting for GitHub Scan</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Nippon India Silver ETF</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono text-slate-400">Pending GitHub Scan</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹82.00</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+            </div>
+
+            <div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹82.00</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="82" data-target-input="SILVERBEES.NS" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+              <button type="button" data-save-target="SILVERBEES.NS" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="SILVERBEES.NS" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="SILVERBEES.NS|alert_below_52w_low" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="SILVERBEES.NS|alert_below_200dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="SILVERBEES.NS|alert_below_50dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        </div><div class="glass-card rounded-2xl p-4 border border-slate-800 flex flex-col justify-between transition">
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">RELIANCE</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold bg-slate-800 text-slate-300 border-slate-700">⏳ Waiting for GitHub Scan</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Reliance Industries</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono text-slate-400">Pending GitHub Scan</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹1250.00</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+            </div>
+
+            <div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹1250.00</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="1250" data-target-input="RELIANCE.NS" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+              <button type="button" data-save-target="RELIANCE.NS" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="RELIANCE.NS" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="RELIANCE.NS|alert_below_52w_low" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="RELIANCE.NS|alert_below_200dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="RELIANCE.NS|alert_below_50dma" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        </div><div class="glass-card rounded-2xl p-4 border border-slate-800 flex flex-col justify-between transition">
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">TCS</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold bg-slate-800 text-slate-300 border-slate-700">⏳ Waiting for GitHub Scan</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Tata Consultancy Services</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono text-slate-400">Pending GitHub Scan</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹3800.00</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+            </div>
+
+            <div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹3800.00</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="3800" data-target-input="TCS.NS" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+              <button type="button" data-save-target="TCS.NS" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="TCS.NS" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="TCS.NS|alert_below_52w_low" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="TCS.NS|alert_below_200dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="TCS.NS|alert_below_50dma" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        </div><div class="glass-card rounded-2xl p-4 border border-slate-800 flex flex-col justify-between transition">
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">HDFCBANK</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold bg-slate-800 text-slate-300 border-slate-700">⏳ Waiting for GitHub Scan</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">HDFC Bank</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono text-slate-400">Pending GitHub Scan</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹1600.00</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+            </div>
+
+            <div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹1600.00</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="1600" data-target-input="HDFCBANK.NS" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+              <button type="button" data-save-target="HDFCBANK.NS" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="HDFCBANK.NS" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="HDFCBANK.NS|alert_below_52w_low" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="HDFCBANK.NS|alert_below_200dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="HDFCBANK.NS|alert_below_50dma" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        </div><div class="glass-card rounded-2xl p-4 border border-slate-800 flex flex-col justify-between transition">
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">TATAMOTORS</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold bg-slate-800 text-slate-300 border-slate-700">⏳ Waiting for GitHub Scan</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Tata Motors</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono text-slate-400">Pending GitHub Scan</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹850.00</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">Fetched by GitHub</span>
+              </div>
+            </div>
+
+            <div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹850.00</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="850" data-target-input="TATAMOTORS.NS" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500">
+              <button type="button" data-save-target="TATAMOTORS.NS" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="TATAMOTORS.NS" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="TATAMOTORS.NS|alert_below_52w_low" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="TATAMOTORS.NS|alert_below_200dma" checked="" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="TATAMOTORS.NS|alert_below_50dma" class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0">
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        </div></div>
+    </section>
+
+    <!-- ================= TAB 2: ALERTS RECEIVED FROM GITHUB ================= -->
+    <section id="tab-alerts" class="hidden space-y-6">
+
+      <!-- Real-Time Listener Banner (Receives Only from GitHub) -->
+      <div class="glass-card rounded-2xl p-4 sm:p-5 border-l-4 border-l-emerald-500">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <h2 class="text-sm sm:text-base font-bold text-white">📲 GitHub-Only Notification Receiver</h2>
+              <span class="px-2 py-0.5 text-[11px] rounded bg-emerald-500/20 text-emerald-300 font-mono">Read-Only from GitHub</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              This app <strong>never</strong> pushes notifications on its own. Only your GitHub Actions job (<code class="text-amber-300">nse_dip_predictor.py</code>) checks live NSE prices and sends alerts to this topic (<a href="https://ntfy.sh" target="_blank" rel="noopener" class="text-emerald-400 underline">ntfy.sh</a>) and saves them to <code class="text-emerald-300">alerts_history.json</code> in your repository.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap sm:flex-nowrap items-center gap-2">
+            <div class="relative flex-1 sm:w-64">
+              <span class="absolute left-3 top-2 text-xs text-slate-500 font-mono">ntfy.sh/</span>
+              <input id="ntfyTopicInput" type="text" class="w-full pl-16 pr-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 text-xs sm:text-sm text-emerald-300 font-mono focus:outline-none focus:border-emerald-500">
+            </div>
+            <button id="saveTopicBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-white border border-slate-600 transition">
+              Update Topic
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Feed Header -->
+      <div class="flex items-center justify-between">
+        <h3 class="text-sm font-bold text-slate-200">Alerts Fetched from Your GitHub Repository (<code class="text-emerald-400 font-mono">alerts_history.json</code>)</h3>
+        <div class="flex items-center gap-2">
+          <button id="refreshAlertsFromGhBtn" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-xs font-semibold text-emerald-300 transition">
+            🔄 Fetch Alerts from GitHub
+          </button>
+          <button id="enableBrowserNotifBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs text-slate-300 transition">
+            🖥️ Enable Browser Popups
+          </button>
+          <button id="clearAlertsBtn" type="button" class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-slate-400 hover:text-rose-300 transition">
+            Clear View
+          </button>
+        </div>
+      </div>
+
+      <!-- Feed List -->
+      <div id="alertsFeedContainer" class="space-y-3">
+          <div class="glass-card rounded-2xl p-8 text-center">
+            <p class="text-sm font-medium text-slate-300">No alerts received from GitHub Actions yet.</p>
+            <p class="text-xs text-slate-500 mt-1">When your scheduled GitHub Actions workflow detects a stock below your target ₹, 52W Low, or 200-DMA, it will appear here automatically.</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- ================= TAB 3: GITHUB SYNC & CLOUD SETUP ================= -->
+    <section id="tab-github" class="space-y-6">
+
+      <!-- Direct GitHub API Connection Card -->
+      <div class="glass-card rounded-2xl p-4 sm:p-5 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 class="text-sm sm:text-base font-bold text-white">🔗 Connect &amp; Deploy to Your GitHub Repository</h2>
+            <p class="text-xs text-slate-400">
+              Your app pushes your configured symbols and target ₹ prices to <code class="text-emerald-400">watchlist.json</code> on GitHub, and fetches the live NSE prices, 52W lows, and averages that GitHub Actions calculates.
+            </p>
+          </div>
+          <span id="githubSyncStatus" class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Connected: artqueenbalu-rgb/nse-stock-alerts</span>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <p class="text-xs font-bold text-emerald-300">🌐 Your Bookmarkable GitHub App URL (GitHub Pages)</p>
+            <p class="text-xs text-slate-300 mt-0.5">
+              Once you click <strong>1-Click Deploy All Files &amp; Host App</strong> below, bookmark this URL on your phone &amp; laptop:
+              <a id="ghPagesUrlLink" href="https://artqueenbalu-rgb.github.io/nse-stock-alerts/" target="_blank" rel="noopener" class="font-mono font-bold text-white underline ml-1">https://artqueenbalu-rgb.github.io/nse-stock-alerts/</a>
+            </p>
+          </div>
+          <button id="copyGhPagesUrlBtn" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-200 border border-emerald-500/40 text-xs font-semibold transition">
+            📋 Copy App URL
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div>
+            <label for="ghOwnerInput" class="block text-[11px] font-medium text-slate-400 mb-1">GitHub Username / Owner</label>
+            <input id="ghOwnerInput" type="text" placeholder="artqueenbalu-rgb" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 font-mono focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label for="ghRepoInput" class="block text-[11px] font-medium text-slate-400 mb-1">Repository Name</label>
+            <input id="ghRepoInput" type="text" placeholder="nse-stock-alerts" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 font-mono focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label for="ghTokenInput" class="block text-[11px] font-medium text-slate-400 mb-1">GitHub Personal Access Token (repo + workflow)</label>
+            <input id="ghTokenInput" type="password" placeholder="ghp_xxxxxxxxxxxx" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-sm text-white placeholder-slate-500 font-mono focus:outline-none focus:border-emerald-500">
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2 pt-1">
+          <button id="saveGhConfigBtn" type="button" class="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-white border border-slate-600 transition">
+            💾 Save GitHub Settings
+          </button>
+          <button id="autoDeployAllToGhBtn" type="button" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-bold transition shadow-md shadow-emerald-950/50">
+            🚀 1-Click Deploy All Files to GitHub
+          </button>
+          <button id="pushWatchlistToGhBtn" type="button" class="px-3.5 py-2 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+            ⬆️ Push Watchlist Config to GitHub
+          </button>
+          <button id="pullWatchlistFromGhBtn" type="button" class="px-3.5 py-2 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-500/40 text-xs font-semibold transition">
+            ⬇️ Fetch Live Prices &amp; Alerts from GitHub
+          </button>
+          <button id="triggerGhWorkflowBtn" type="button" class="px-3.5 py-2 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/40 text-xs font-semibold transition">
+            ⚡ Run GitHub Actions NSE Scan Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Ready-to-Copy GitHub Files -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-bold text-white">1. Configured <code class="text-emerald-400">watchlist.json</code></h3>
+              <button id="copyWatchlistJsonBtn" type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-emerald-300 font-medium border border-slate-700 transition">
+                📋 Copy watchlist.json
+              </button>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">Contains your symbols, names, and target ₹ prices. GitHub fills in the live market metrics when it runs.</p>
+          </div>
+          <pre id="watchlistJsonPreview" class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-emerald-300 font-mono overflow-x-auto max-h-72">{
+  "GOLDBEES.NS": {
+    "name": "Nippon India ETF Gold BeES",
+    "target_price": 62,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": true
+  },
+  "SILVERBEES.NS": {
+    "name": "Nippon India Silver ETF",
+    "target_price": 82,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": true
+  },
+  "RELIANCE.NS": {
+    "name": "Reliance Industries",
+    "target_price": 1250,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  },
+  "TCS.NS": {
+    "name": "Tata Consultancy Services",
+    "target_price": 3800,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  },
+  "HDFCBANK.NS": {
+    "name": "HDFC Bank",
+    "target_price": 1600,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  },
+  "TATAMOTORS.NS": {
+    "name": "Tata Motors",
+    "target_price": 850,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
+  }
+}</pre>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-bold text-white">2. GitHub Workflow <code class="text-sky-400">.github/workflows/market_alert.yml</code></h3>
+              <button id="copyWorkflowYamlBtn" type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-sky-300 font-medium border border-slate-700 transition">
+                📋 Copy Workflow YAML
+              </button>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">Runs on GitHub, fetches NSE prices, saves them back to your repo so this app can read them, and sends push alerts.</p>
+          </div>
+          <pre id="workflowYamlPreview" class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-sky-300 font-mono overflow-x-auto max-h-72">name: NSE Stock, Gold BeES &amp; Silver BeES App Alert
+
+on:
+  schedule:
+    - cron: '*/30 4-10 * * 1-5'
+    - cron: '15 10 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  nse-price-alert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Scan NSE Prices on GitHub &amp; Push Alerts
+        env:
+          NTFY_TOPIC: "nse-alerts-in-3915"
+        run: python nse_dip_predictor.py
+      - name: Save Fetched NSE Prices &amp; Alert History to Repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add watchlist.json alerts_history.json || true
+          git diff --staged --quiet || git commit -m "Update live NSE market data &amp; alerts from GitHub scan"
+          git push</pre>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-bold text-white">3. Scanner Script <code class="text-amber-400">nse_dip_predictor.py</code></h3>
+              <button id="copyPythonScriptBtn" type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-amber-300 font-medium border border-slate-700 transition">
+                📋 Copy nse_dip_predictor.py
+              </button>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">Fetches 1-year NSE data via Yahoo Finance on GitHub, updates <code class="text-emerald-400">watchlist.json</code> &amp; <code class="text-emerald-400">alerts_history.json</code>, and pushes alerts.</p>
+          </div>
+          <pre id="pythonScriptPreview" class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-amber-200 font-mono overflow-x-auto max-h-72">import os, json, requests, yfinance as yf, pandas as pd, numpy as np
+from datetime import datetime, timezone, timedelta
+
+IST = timezone(timedelta(hours=5, minutes=30))
+WATCHLIST_FILE = "watchlist.json"
+ALERTS_HISTORY_FILE = "alerts_history.json"
+NTFY_TOPIC = os.getenv("NTFY_TOPIC", "nse-alerts-in-3915")
+
+def load_json(path, default):
+    if os.path.exists(path):
+        try:
+            with open(path, "r") as f:
+                return json.load(f)
+        except Exception:
+            return default
+    return default
+
+def run_scan():
+    watchlist = load_json(WATCHLIST_FILE, {})
+    alerts_history = load_json(ALERTS_HISTORY_FILE, [])
+    now_str = datetime.now(IST).strftime("%d-%b-%Y %I:%M %p IST")
+
+    for sym, cfg in watchlist.items():
+        df = yf.download(sym, period="1y", interval="1d", progress=False)
+        if df is None or df.empty:
+            continue
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = [c[0] for c in df.columns]
+        close = float(df["Close"].iloc[-1])
+        low_52w = float(df["Low"].rolling(252, min_periods=15).min().iloc[-1])
+        sma_200 = float(df["Close"].rolling(200, min_periods=20).mean().iloc[-1])
+        sma_50 = float(df["Close"].rolling(50, min_periods=10).mean().iloc[-1])
+        target = float(cfg.get("target_price", 0))
+
+        reasons = []
+        status_type = "ok"
+        badge_label = "✅ Above Target"
+        if target &gt; 0 and close &lt;= target:
+            reasons.append(f"🎯 Target Hit: Rs.{close:.2f} &lt;= Target Rs.{target:.2f}")
+            status_type = "target"
+            badge_label = "🚨 TARGET BUY HIT"
+        if cfg.get("alert_below_52w_low", True) and close &lt;= low_52w * 1.02:
+            reasons.append(f"📉 Near 52W Low: Rs.{close:.2f} (52W Low: Rs.{low_52w:.2f})")
+            if status_type == "ok":
+                status_type = "low52"
+                badge_label = "🔥 52W LOW BUY ZONE"
+        if cfg.get("alert_below_200dma", True) and not np.isnan(sma_200) and close &lt; sma_200:
+            reasons.append(f"📊 Below 200-DMA: Rs.{close:.2f} &lt; Rs.{sma_200:.2f}")
+            if status_type == "ok":
+                status_type = "dma"
+                badge_label = "⚠️ BELOW 200-DMA"
+        if cfg.get("alert_below_50dma", False) and not np.isnan(sma_50) and close &lt; sma_50:
+            reasons.append(f"📊 Below 50-DMA: Rs.{close:.2f} &lt; Rs.{sma_50:.2f}")
+
+        # Save live GitHub-fetched metrics into watchlist.json so the Web App reads them
+        cfg["current_price"] = round(close, 2)
+        cfg["low_52w"] = round(low_52w, 2)
+        cfg["sma_200"] = round(sma_200, 2) if not np.isnan(sma_200) else 0.0
+        cfg["sma_50"] = round(sma_50, 2) if not np.isnan(sma_50) else 0.0
+        cfg["last_scanned"] = now_str
+
+        if reasons:
+            alerts_history.insert(0, {
+                "symbol": sym,
+                "name": cfg.get("name", sym),
+                "curr": round(close, 2),
+                "target": round(target, 2),
+                "low52": round(low_52w, 2),
+                "sma200": round(sma_200, 2) if not np.isnan(sma_200) else 0.0,
+                "statusType": status_type,
+                "badgeLabel": badge_label,
+                "reasons": reasons,
+                "time": now_str
+            })
+            if NTFY_TOPIC:
+                msg = f"Stock: {cfg.get('name', sym)} ({sym})\nLive Price: Rs.{close:.2f} | Target: Rs.{target:.2f}\n52W Low: Rs.{low_52w:.2f} | 200-DMA: Rs.{sma_200:.2f}\n" + "\n".join(reasons)
+                requests.post(f"https://ntfy.sh/{NTFY_TOPIC}", data=msg.encode("utf-8"), headers={"Title": f"NSE Buy Alert: {sym.replace('.NS','')} @ Rs.{close:.2f}", "Priority": "high"})
+
+    with open(WATCHLIST_FILE, "w") as f:
+        json.dump(watchlist, f, indent=2)
+    with open(ALERTS_HISTORY_FILE, "w") as f:
+        json.dump(alerts_history[:50], f, indent=2)
+
+if __name__ == "__main__":
+    run_scan()</pre>
+        </div>
+
+        <div class="glass-card rounded-2xl p-4 sm:p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-sm font-bold text-white">4. Dependencies <code class="text-purple-400">requirements.txt</code></h3>
+              <button id="copyRequirementsBtn" type="button" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-xs text-purple-300 font-medium border border-slate-700 transition">
+                📋 Copy requirements.txt
+              </button>
+            </div>
+            <p class="text-xs text-slate-400 mb-3">Python libraries installed automatically by GitHub Actions during each scan.</p>
+          </div>
+          <pre id="requirementsPreview" class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-purple-300 font-mono overflow-x-auto max-h-72">yfinance&gt;=0.2.36
+pandas&gt;=2.0.0
+numpy&gt;=1.24.0
+requests&gt;=2.31.0
+python-dotenv&gt;=1.0.0</pre>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <script>
+    // =========================================================================
+    // Default Watchlist State: ONLY User-Configured Fields (Symbol, Name, Target ₹)
+    // All market metrics (current_price, low_52w, sma_200, etc.) start null
+    // until fetched from GitHub!
+    // =========================================================================
+    const INITIAL_WATCHLIST = {
+      "GOLDBEES.NS": {
+        name: "Nippon India ETF Gold BeES",
+        target_price: 62.00,
+        alert_below_52w_low: true,
+        alert_below_200dma: true,
+        alert_below_50dma: true
+      },
+      "SILVERBEES.NS": {
+        name: "Nippon India Silver ETF",
+        target_price: 82.00,
+        alert_below_52w_low: true,
+        alert_below_200dma: true,
+        alert_below_50dma: true
+      },
+      "RELIANCE.NS": {
+        name: "Reliance Industries",
+        target_price: 1250.00,
+        alert_below_52w_low: true,
+        alert_below_200dma: true,
+        alert_below_50dma: false
+      },
+      "TCS.NS": {
+        name: "Tata Consultancy Services",
+        target_price: 3800.00,
+        alert_below_52w_low: true,
+        alert_below_200dma: true,
+        alert_below_50dma: false
+      },
+      "HDFCBANK.NS": {
+        name: "HDFC Bank",
+        target_price: 1600.00,
+        alert_below_52w_low: true,
+        alert_below_200dma: true,
+        alert_below_50dma: false
+      },
+      "TATAMOTORS.NS": {
+        name: "Tata Motors",
+        target_price: 850.00,
+        alert_below_52w_low: true,
+        alert_below_200dma: true,
+        alert_below_50dma: false
+      }
+    };
+
+    const SYMBOL_ALIASES = {
+      "GOLDBEES": "GOLDBEES.NS",
+      "GOLD BEES": "GOLDBEES.NS",
+      "GOLD": "GOLDBEES.NS",
+      "SILVERBEES": "SILVERBEES.NS",
+      "SILVER BEES": "SILVERBEES.NS",
+      "SILVER": "SILVERBEES.NS"
+    };
+
+    let appState = {
+      watchlist: {},
+      alertsFeed: [],
+      activeTab: 'watchlist',
+      stockFilter: 'all',
+      soundEnabled: true,
+      ntfyTopic: 'nse-buy-alerts-8842',
+      ghOwner: 'artqueenbalu-rgb',
+      ghRepo: 'nse-stock-alerts',
+      ghToken: ''
+    };
+
+    let eventSource = null;
+    let audioCtx = null;
+
+    // =========================================================================
+    // Safe Storage Helpers
+    // =========================================================================
+    function loadStateFromStorage() {
+      try {
+        const savedWatchlist = localStorage.getItem('nse_app_watchlist_v2');
+        appState.watchlist = savedWatchlist ? JSON.parse(savedWatchlist) : JSON.parse(JSON.stringify(INITIAL_WATCHLIST));
+
+        const savedTopic = localStorage.getItem('nse_app_ntfy_topic_v1');
+        if (savedTopic) {
+          appState.ntfyTopic = savedTopic;
+        } else {
+          const randId = Math.floor(1000 + Math.random() * 9000);
+          appState.ntfyTopic = 'nse-alerts-in-' + randId;
+          localStorage.setItem('nse_app_ntfy_topic_v1', appState.ntfyTopic);
+        }
+
+        const savedAlerts = localStorage.getItem('nse_app_alerts_v2');
+        if (savedAlerts) appState.alertsFeed = JSON.parse(savedAlerts);
+
+        appState.ghOwner = localStorage.getItem('nse_app_gh_owner') || 'artqueenbalu-rgb';
+        appState.ghRepo = localStorage.getItem('nse_app_gh_repo') || 'nse-stock-alerts';
+        appState.ghToken = localStorage.getItem('nse_app_gh_token') || '';
+      } catch (err) {
+        appState.watchlist = JSON.parse(JSON.stringify(INITIAL_WATCHLIST));
+      }
+    }
+
+    function saveStateToStorage() {
+      try {
+        localStorage.setItem('nse_app_watchlist_v2', JSON.stringify(appState.watchlist));
+        localStorage.setItem('nse_app_ntfy_topic_v1', appState.ntfyTopic);
+        localStorage.setItem('nse_app_alerts_v2', JSON.stringify(appState.alertsFeed.slice(0, 50)));
+        localStorage.setItem('nse_app_gh_owner', appState.ghOwner);
+        localStorage.setItem('nse_app_gh_repo', appState.ghRepo);
+        localStorage.setItem('nse_app_gh_token', appState.ghToken);
+      } catch (err) {}
+    }
+
+    // =========================================================================
+    // Web Audio Chime (Only plays when an incoming alert arrives from GitHub)
+    // =========================================================================
+    function playNotificationChime() {
+      if (!appState.soundEnabled) return;
+      try {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) return;
+        if (!audioCtx) audioCtx = new AudioContextClass();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const now = audioCtx.currentTime;
+        const osc1 = audioCtx.createOscillator();
+        const osc2 = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+
+        osc1.type = 'sine';
+        osc2.type = 'triangle';
+        osc1.frequency.setValueAtTime(587.33, now);
+        osc1.frequency.setValueAtTime(880.00, now + 0.12);
+        osc2.frequency.setValueAtTime(293.66, now);
+        osc2.frequency.setValueAtTime(440.00, now + 0.12);
+
+        gain.gain.setValueAtTime(0.18, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+
+        osc1.connect(gain);
+        osc2.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        osc1.start(now);
+        osc2.start(now);
+        osc1.stop(now + 0.45);
+        osc2.stop(now + 0.45);
+      } catch (e) {}
+    }
+
+    // =========================================================================
+    // Toast & Clipboard Helpers
+    // =========================================================================
+    function showToast(title, message, type = 'emerald') {
+      const container = document.getElementById('toastContainer');
+      const toast = document.createElement('div');
+      const colorMap = {
+        emerald: 'border-emerald-500/60 bg-slate-900/95 text-emerald-300',
+        rose: 'border-rose-500/60 bg-slate-900/95 text-rose-300',
+        amber: 'border-amber-500/60 bg-slate-900/95 text-amber-300',
+        sky: 'border-sky-500/60 bg-slate-900/95 text-sky-300'
+      };
+      toast.className = `pointer-events-auto p-3.5 rounded-xl border shadow-xl transition-all duration-300 ${colorMap[type] || colorMap.emerald}`;
+      toast.innerHTML = `
+        <div class="flex items-start justify-between gap-2">
+          <div>
+            <p class="text-xs font-bold text-white">${title}</p>
+            <p class="text-xs text-slate-300 mt-0.5">${message}</p>
+          </div>
+          <button type="button" class="text-slate-400 hover:text-white text-xs font-bold px-1">✕</button>
+        </div>
+      `;
+      toast.querySelector('button').addEventListener('click', () => toast.remove());
+      container.appendChild(toast);
+      setTimeout(() => {
+        if (toast.parentNode) toast.remove();
+      }, 4500);
+    }
+
+    function copyTextToClipboard(text, label) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('Copied!', `${label} copied to clipboard.`, 'emerald');
+        }).catch(() => fallbackCopy(text, label));
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+
+    function fallbackCopy(text, label) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('Copied!', `${label} copied to clipboard.`, 'emerald');
+      } catch (err) {
+        showToast('Copy Notice', 'Select and copy the text manually.', 'amber');
+      }
+      document.body.removeChild(ta);
+    }
+
+    // =========================================================================
+    // Symbol Normalization & GitHub-Fetched Status Reader
+    // =========================================================================
+    function normalizeSymbol(raw) {
+      let cleaned = (raw || '').trim().toUpperCase();
+      if (SYMBOL_ALIASES[cleaned]) return SYMBOL_ALIASES[cleaned];
+      cleaned = cleaned.replace(/\s+/g, '');
+      if (cleaned.endsWith('.BO')) cleaned = cleaned.slice(0, -3) + '.NS';
+      if (!cleaned.endsWith('.NS')) cleaned = cleaned + '.NS';
+      return cleaned;
+    }
+
+    function readGitHubStockState(symbol, cfg) {
+      const hasGitHubData = typeof cfg.current_price === 'number' && cfg.current_price > 0;
+      const target = Number(cfg.target_price || 0);
+
+      if (!hasGitHubData) {
+        return {
+          symbol,
+          shortTicker: symbol.replace('.NS', ''),
+          name: cfg.name || symbol.replace('.NS', ''),
+          hasGitHubData: false,
+          currText: 'Pending GitHub Scan',
+          low52Text: 'Fetched by GitHub',
+          sma200Text: 'Fetched by GitHub',
+          target,
+          triggered: false,
+          statusType: 'pending',
+          badgeLabel: '⏳ Waiting for GitHub Scan',
+          reasons: [],
+          lastScanned: null
+        };
+      }
+
+      const curr = Number(cfg.current_price);
+      const low52 = Number(cfg.low_52w || 0);
+      const sma200 = Number(cfg.sma_200 || 0);
+      const sma50 = Number(cfg.sma_50 || 0);
+
+      const reasons = [];
+      let statusType = 'ok';
+      let badgeLabel = '✅ Above Target';
+
+      if (target > 0 && curr <= target) {
+        const diffPct = (((curr - target) / target) * 100).toFixed(2);
+        reasons.push(`🎯 Target Price Reached: Live ₹${curr.toFixed(2)} ≤ Target ₹${target.toFixed(2)} (${diffPct}%)`);
+        statusType = 'target';
+        badgeLabel = '🚨 TARGET BUY HIT';
+      }
+
+      const dist52wPct = low52 > 0 ? ((curr - low52) / low52) * 100 : 999;
+      if (cfg.alert_below_52w_low && dist52wPct <= 2.0) {
+        reasons.push(`📉 Near/At 52-Week Low: ₹${curr.toFixed(2)} (52W Low: ₹${low52.toFixed(2)})`);
+        if (statusType === 'ok') {
+          statusType = 'low52';
+          badgeLabel = '🔥 52W LOW BUY ZONE';
+        }
+      }
+
+      if (cfg.alert_below_200dma && sma200 > 0 && curr < sma200) {
+        const pct = (((sma200 - curr) / sma200) * 100).toFixed(1);
+        reasons.push(`📊 Below 200-Day Avg: ${pct}% below 200-DMA (₹${sma200.toFixed(2)})`);
+        if (statusType === 'ok') {
+          statusType = 'dma';
+          badgeLabel = '⚠️ BELOW 200-DMA';
+        }
+      }
+
+      if (cfg.alert_below_50dma && sma50 > 0 && curr < sma50) {
+        const pct = (((sma50 - curr) / sma50) * 100).toFixed(1);
+        reasons.push(`📊 Below 50-Day Avg: ${pct}% below 50-DMA (₹${sma50.toFixed(2)})`);
+        if (statusType === 'ok') {
+          statusType = 'dma';
+          badgeLabel = '⚠️ BELOW 50-DMA';
+        }
+      }
+
+      return {
+        symbol,
+        shortTicker: symbol.replace('.NS', ''),
+        name: cfg.name || symbol.replace('.NS', ''),
+        hasGitHubData: true,
+        currText: `₹${curr.toFixed(2)}`,
+        low52Text: low52 > 0 ? `₹${low52.toFixed(2)}` : '—',
+        sma200Text: sma200 > 0 ? `₹${sma200.toFixed(2)}` : '—',
+        target,
+        triggered: reasons.length > 0,
+        statusType,
+        badgeLabel,
+        reasons,
+        lastScanned: cfg.last_scanned || null
+      };
+    }
+
+    // =========================================================================
+    // UI Rendering
+    // =========================================================================
+    function renderAll() {
+      const symbols = Object.keys(appState.watchlist);
+      let inTargetCount = 0;
+      let nearLowOrDmaCount = 0;
+
+      symbols.forEach(sym => {
+        const st = readGitHubStockState(sym, appState.watchlist[sym]);
+        if (st.statusType === 'target') inTargetCount++;
+        else if (st.triggered) nearLowOrDmaCount++;
+      });
+
+      document.getElementById('watchlistCountBadge').textContent = symbols.length;
+      document.getElementById('statTotalStocks').textContent = symbols.length;
+      document.getElementById('statInTargetZone').textContent = inTargetCount;
+      document.getElementById('statNearLowOrDma').textContent = nearLowOrDmaCount;
+      document.getElementById('statTopicDisplay').textContent = appState.ntfyTopic;
+      document.getElementById('ntfyTopicInput').value = appState.ntfyTopic;
+      document.getElementById('alertCountBadge').textContent = appState.alertsFeed.length;
+
+      document.getElementById('ghOwnerInput').value = appState.ghOwner;
+      const pagesUrl = `https://${appState.ghOwner || 'artqueenbalu-rgb'}.github.io/${appState.ghRepo || 'nse-stock-alerts'}/`;
+      const pagesLink = document.getElementById('ghPagesUrlLink');
+      if (pagesLink) {
+        pagesLink.href = pagesUrl;
+        pagesLink.textContent = pagesUrl;
+      }
+      document.getElementById('ghRepoInput').value = appState.ghRepo;
+      document.getElementById('ghTokenInput').value = appState.ghToken;
+
+      const ghStatus = document.getElementById('githubSyncStatus');
+      if (appState.ghOwner && appState.ghRepo && appState.ghToken) {
+        ghStatus.textContent = `Connected: ${appState.ghOwner}/${appState.ghRepo}`;
+        ghStatus.className = 'px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30';
+      } else {
+        ghStatus.textContent = 'Local Mode (Add Token in GitHub Tab to Sync)';
+        ghStatus.className = 'px-2.5 py-1 rounded-full text-xs font-medium bg-slate-800 text-slate-300';
+      }
+
+      renderWatchlistCards();
+      renderAlertsFeed();
+      renderCodePreviews();
+    }
+
+    function renderWatchlistCards() {
+      const grid = document.getElementById('watchlistGrid');
+      grid.innerHTML = '';
+
+      const entries = Object.entries(appState.watchlist);
+      const filtered = entries.filter(([sym, cfg]) => {
+        const st = readGitHubStockState(sym, cfg);
+        if (appState.stockFilter === 'triggered') return st.triggered;
+        if (appState.stockFilter === 'bees') return sym.includes('BEES');
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full glass-card rounded-2xl p-8 text-center">
+            <p class="text-sm text-slate-300 font-medium">No shares in this view yet.</p>
+            <p class="text-xs text-slate-500 mt-1">Click "All Shares" or click "Fetch Latest from GitHub" in the top bar after GitHub Actions runs.</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(([sym, cfg]) => {
+        const st = readGitHubStockState(sym, cfg);
+        const card = document.createElement('div');
+
+        const borderClass = st.statusType === 'target'
+          ? 'border-rose-500/70 shadow-lg shadow-rose-950/30'
+          : st.triggered
+            ? 'border-amber-500/60'
+            : 'border-slate-800';
+
+        const badgeColor = st.statusType === 'target'
+          ? 'bg-rose-500/20 text-rose-300 border-rose-500/40'
+          : st.triggered
+            ? 'bg-amber-500/20 text-amber-300 border-amber-500/40'
+            : st.statusType === 'pending'
+              ? 'bg-slate-800 text-slate-300 border-slate-700'
+              : 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30';
+
+        const statusFooterHtml = st.hasGitHubData
+          ? (st.reasons.length > 0
+              ? `<div class="mt-3 p-2.5 rounded-lg bg-slate-950/90 border border-slate-800 space-y-1">
+                   ${st.reasons.map(r => `<p class="text-xs text-amber-200 font-medium">${r}</p>`).join('')}
+                   ${st.lastScanned ? `<p class="text-[10px] text-slate-500 pt-1">Fetched by GitHub: ${st.lastScanned}</p>` : ''}
+                 </div>`
+              : `<div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60 flex items-center justify-between">
+                   <p class="text-xs text-slate-400">GitHub watching for dip ≤ <span class="text-emerald-300 font-mono">₹${st.target.toFixed(2)}</span></p>
+                   ${st.lastScanned ? `<span class="text-[10px] text-slate-500 font-mono">${st.lastScanned}</span>` : ''}
+                 </div>`)
+          : `<div class="mt-3 p-2 rounded-lg bg-slate-950/50 border border-slate-800/60">
+               <p class="text-xs text-slate-400">Configured Target: <span class="text-emerald-300 font-mono">₹${st.target.toFixed(2)}</span> • Live price, 52W Low &amp; 200-DMA will populate when fetched from GitHub.</p>
+             </div>`;
+
+        card.className = `glass-card rounded-2xl p-4 border ${borderClass} flex flex-col justify-between transition`;
+        card.innerHTML = `
+          <div>
+            <!-- Card Top Row -->
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="text-sm sm:text-base font-bold text-white font-mono">${st.shortTicker}</span>
+                  <span class="text-[11px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400 font-mono">.NS</span>
+                  <span class="text-[11px] px-2 py-0.5 rounded-full border font-semibold ${badgeColor}">${st.badgeLabel}</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">${st.name}</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[10px] text-slate-400 uppercase tracking-wider">GitHub Fetched Price</p>
+                <p class="text-sm sm:text-base font-bold font-mono ${st.hasGitHubData ? 'text-white' : 'text-slate-400'}">${st.currText}</p>
+              </div>
+            </div>
+
+            <!-- Metrics Strip (Target is User-Configured; 52W Low & 200-DMA are GitHub-Fetched) -->
+            <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-800/80 text-xs">
+              <div class="p-2 rounded-lg bg-slate-900/80 border border-emerald-500/20">
+                <span class="text-[10px] text-emerald-400 block">Your Target Alert (₹)</span>
+                <span class="font-mono font-bold text-emerald-300">₹${st.target.toFixed(2)}</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">52W Low (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">${st.low52Text}</span>
+              </div>
+              <div class="p-2 rounded-lg bg-slate-900/80">
+                <span class="text-[10px] text-slate-400 block">200-DMA (GitHub)</span>
+                <span class="font-mono font-semibold text-slate-300">${st.sma200Text}</span>
+              </div>
+            </div>
+
+            ${statusFooterHtml}
+          </div>
+
+          <!-- Inline Modify Target Price & Toggles -->
+          <div class="mt-4 pt-3 border-t border-slate-800/80 space-y-2.5">
+            <div class="flex flex-wrap items-center gap-2">
+              <label class="text-[11px] text-slate-400">Modify Alert ₹:</label>
+              <input type="number" step="0.05" value="${st.target}" data-target-input="${sym}" class="w-28 px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs text-white font-mono focus:outline-none focus:border-emerald-500" />
+              <button type="button" data-save-target="${sym}" class="px-2.5 py-1 rounded bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 text-xs font-semibold transition">
+                Update ₹
+              </button>
+              <button type="button" data-delete-stock="${sym}" class="ml-auto px-2.5 py-1 rounded bg-rose-500/15 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-xs font-medium transition">
+                Delete Share
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 text-[11px] text-slate-300">
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="${sym}|alert_below_52w_low" ${cfg.alert_below_52w_low !== false ? 'checked' : ''} class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0" />
+                <span>52W Low Alert</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="${sym}|alert_below_200dma" ${cfg.alert_below_200dma !== false ? 'checked' : ''} class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0" />
+                <span>Below 200-DMA</span>
+              </label>
+              <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                <input type="checkbox" data-toggle-rule="${sym}|alert_below_50dma" ${cfg.alert_below_50dma ? 'checked' : ''} class="rounded bg-slate-900 border-slate-700 text-emerald-500 focus:ring-0" />
+                <span>Below 50-DMA</span>
+              </label>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      // Attach listeners for dynamic buttons
+      grid.querySelectorAll('[data-save-target]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const sym = btn.getAttribute('data-save-target');
+          const inp = grid.querySelector(`[data-target-input="${sym}"]`);
+          const newPrice = parseFloat(inp.value);
+          if (isNaN(newPrice) || newPrice <= 0) {
+            showToast('Invalid Price', 'Please enter a valid target price in ₹.', 'rose');
+            return;
+          }
+          appState.watchlist[sym].target_price = newPrice;
+          saveStateToStorage();
+          renderAll();
+          showToast('Target Updated', `${sym} target set to ₹${newPrice.toFixed(2)}.`, 'emerald');
+          if (appState.ghToken) {
+            await pushWatchlistToGitHub();
+          }
+        });
+      });
+
+      grid.querySelectorAll('[data-delete-stock]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const sym = btn.getAttribute('data-delete-stock');
+          const name = appState.watchlist[sym]?.name || sym;
+          delete appState.watchlist[sym];
+          saveStateToStorage();
+          renderAll();
+          showToast('Removed from Watchlist', `${name} (${sym}) was deleted.`, 'amber');
+          if (appState.ghToken) {
+            await pushWatchlistToGitHub();
+          }
+        });
+      });
+
+      grid.querySelectorAll('[data-toggle-rule]').forEach(chk => {
+        chk.addEventListener('change', async () => {
+          const [sym, field] = chk.getAttribute('data-toggle-rule').split('|');
+          if (appState.watchlist[sym]) {
+            appState.watchlist[sym][field] = chk.checked;
+            saveStateToStorage();
+            renderAll();
+            if (appState.ghToken) {
+              await pushWatchlistToGitHub();
+            }
+          }
+        });
+      });
+    }
+
+    function renderAlertsFeed() {
+      const container = document.getElementById('alertsFeedContainer');
+      if (appState.alertsFeed.length === 0) {
+        container.innerHTML = `
+          <div class="glass-card rounded-2xl p-8 text-center">
+            <p class="text-sm font-medium text-slate-300">No alerts received from GitHub Actions yet.</p>
+            <p class="text-xs text-slate-500 mt-1">When your scheduled GitHub Actions workflow detects a stock below your target ₹, 52W Low, or 200-DMA, it will appear here automatically.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = appState.alertsFeed.map(item => `
+        <div class="glass-card rounded-xl p-4 border-l-4 ${item.statusType === 'target' ? 'border-l-rose-500' : 'border-l-amber-400'}">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2 py-0.5 rounded bg-rose-500/20 text-rose-300">${item.badgeLabel || '🚨 GITHUB BUY ALERT'}</span>
+              <span class="text-sm font-bold text-white font-mono">${item.symbol || ''}</span>
+              <span class="text-xs text-slate-400">${item.name ? `(${item.name})` : ''}</span>
+            </div>
+            <span class="text-[11px] text-slate-400 font-mono">${item.time || ''}</span>
+          </div>
+          ${item.curr ? `
+          <div class="mt-2 flex flex-wrap items-center gap-4 text-xs">
+            <span class="text-slate-300">NSE Price: <strong class="text-white font-mono">₹${Number(item.curr).toFixed(2)}</strong></span>
+            <span class="text-slate-300">Target: <strong class="text-emerald-400 font-mono">₹${Number(item.target || 0).toFixed(2)}</strong></span>
+            <span class="text-slate-300">52W Low: <strong class="text-slate-200 font-mono">₹${Number(item.low52 || 0).toFixed(2)}</strong></span>
+            <span class="text-slate-300">200-DMA: <strong class="text-slate-200 font-mono">₹${Number(item.sma200 || 0).toFixed(2)}</strong></span>
+          </div>` : ''}
+          <div class="mt-2 space-y-1">
+            ${(item.reasons || []).map(r => `<p class="text-xs text-amber-200">${r}</p>`).join('')}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderCodePreviews() {
+      const cleanWatchlist = {};
+      Object.entries(appState.watchlist).forEach(([sym, cfg]) => {
+        cleanWatchlist[sym] = {
+          name: cfg.name,
+          target_price: Number(cfg.target_price),
+          alert_below_52w_low: cfg.alert_below_52w_low !== false,
+          alert_below_200dma: cfg.alert_below_200dma !== false,
+          alert_below_50dma: Boolean(cfg.alert_below_50dma)
+        };
+        if (typeof cfg.current_price === 'number') {
+          cleanWatchlist[sym].current_price = cfg.current_price;
+          cleanWatchlist[sym].low_52w = cfg.low_52w;
+          cleanWatchlist[sym].sma_200 = cfg.sma_200;
+          cleanWatchlist[sym].sma_50 = cfg.sma_50;
+          cleanWatchlist[sym].last_scanned = cfg.last_scanned;
+        }
+      });
+      document.getElementById('watchlistJsonPreview').textContent = JSON.stringify(cleanWatchlist, null, 2);
+
+      const workflowYaml = `name: NSE Stock, Gold BeES & Silver BeES App Alert
+
+on:
+  schedule:
+    - cron: '*/30 4-10 * * 1-5'
+    - cron: '15 10 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  nse-price-alert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Scan NSE Prices on GitHub & Push Alerts
+        env:
+          NTFY_TOPIC: "${appState.ntfyTopic}"
+        run: python nse_dip_predictor.py
+      - name: Save Fetched NSE Prices & Alert History to Repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add watchlist.json alerts_history.json || true
+          git diff --staged --quiet || git commit -m "Update live NSE market data & alerts from GitHub scan"
+          git push`;
+
+      document.getElementById('workflowYamlPreview').textContent = workflowYaml;
+
+      const pyScript = `import os, json, requests, yfinance as yf, pandas as pd, numpy as np
+from datetime import datetime, timezone, timedelta
+
+IST = timezone(timedelta(hours=5, minutes=30))
+WATCHLIST_FILE = "watchlist.json"
+ALERTS_HISTORY_FILE = "alerts_history.json"
+NTFY_TOPIC = os.getenv("NTFY_TOPIC", "${appState.ntfyTopic}")
+
+def load_json(path, default):
+    if os.path.exists(path):
+        try:
+            with open(path, "r") as f:
+                return json.load(f)
+        except Exception:
+            return default
+    return default
+
+def run_scan():
+    watchlist = load_json(WATCHLIST_FILE, {})
+    alerts_history = load_json(ALERTS_HISTORY_FILE, [])
+    now_str = datetime.now(IST).strftime("%d-%b-%Y %I:%M %p IST")
+
+    for sym, cfg in watchlist.items():
+        df = yf.download(sym, period="1y", interval="1d", progress=False)
+        if df is None or df.empty:
+            continue
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = [c[0] for c in df.columns]
+        close = float(df["Close"].iloc[-1])
+        low_52w = float(df["Low"].rolling(252, min_periods=15).min().iloc[-1])
+        sma_200 = float(df["Close"].rolling(200, min_periods=20).mean().iloc[-1])
+        sma_50 = float(df["Close"].rolling(50, min_periods=10).mean().iloc[-1])
+        target = float(cfg.get("target_price", 0))
+
+        reasons = []
+        status_type = "ok"
+        badge_label = "✅ Above Target"
+        if target > 0 and close <= target:
+            reasons.append(f"🎯 Target Hit: Rs.{close:.2f} <= Target Rs.{target:.2f}")
+            status_type = "target"
+            badge_label = "🚨 TARGET BUY HIT"
+        if cfg.get("alert_below_52w_low", True) and close <= low_52w * 1.02:
+            reasons.append(f"📉 Near 52W Low: Rs.{close:.2f} (52W Low: Rs.{low_52w:.2f})")
+            if status_type == "ok":
+                status_type = "low52"
+                badge_label = "🔥 52W LOW BUY ZONE"
+        if cfg.get("alert_below_200dma", True) and not np.isnan(sma_200) and close < sma_200:
+            reasons.append(f"📊 Below 200-DMA: Rs.{close:.2f} < Rs.{sma_200:.2f}")
+            if status_type == "ok":
+                status_type = "dma"
+                badge_label = "⚠️ BELOW 200-DMA"
+        if cfg.get("alert_below_50dma", False) and not np.isnan(sma_50) and close < sma_50:
+            reasons.append(f"📊 Below 50-DMA: Rs.{close:.2f} < Rs.{sma_50:.2f}")
+
+        # Save live GitHub-fetched metrics into watchlist.json so the Web App reads them
+        cfg["current_price"] = round(close, 2)
+        cfg["low_52w"] = round(low_52w, 2)
+        cfg["sma_200"] = round(sma_200, 2) if not np.isnan(sma_200) else 0.0
+        cfg["sma_50"] = round(sma_50, 2) if not np.isnan(sma_50) else 0.0
+        cfg["last_scanned"] = now_str
+
+        if reasons:
+            alerts_history.insert(0, {
+                "symbol": sym,
+                "name": cfg.get("name", sym),
+                "curr": round(close, 2),
+                "target": round(target, 2),
+                "low52": round(low_52w, 2),
+                "sma200": round(sma_200, 2) if not np.isnan(sma_200) else 0.0,
+                "statusType": status_type,
+                "badgeLabel": badge_label,
+                "reasons": reasons,
+                "time": now_str
+            })
+            if NTFY_TOPIC:
+                msg = f"Stock: {cfg.get('name', sym)} ({sym})\\nLive Price: Rs.{close:.2f} | Target: Rs.{target:.2f}\\n52W Low: Rs.{low_52w:.2f} | 200-DMA: Rs.{sma_200:.2f}\\n" + "\\n".join(reasons)
+                requests.post(f"https://ntfy.sh/{NTFY_TOPIC}", data=msg.encode("utf-8"), headers={"Title": f"NSE Buy Alert: {sym.replace('.NS','')} @ Rs.{close:.2f}", "Priority": "high"})
+
+    with open(WATCHLIST_FILE, "w") as f:
+        json.dump(watchlist, f, indent=2)
+    with open(ALERTS_HISTORY_FILE, "w") as f:
+        json.dump(alerts_history[:50], f, indent=2)
+
+if __name__ == "__main__":
+    run_scan()`;
+      document.getElementById('pythonScriptPreview').textContent = pyScript;
+    }
+
+    // =========================================================================
+    // Read-Only SSE Listener (Listens for incoming alerts sent by GitHub)
+    // =========================================================================
+    function connectNtfyStream() {
+      if (eventSource) {
+        try { eventSource.close(); } catch (e) {}
+      }
+      if (!appState.ntfyTopic) return;
+
+      const badgeDot = document.getElementById('sseStatusDot');
+      const badgeText = document.getElementById('sseStatusText');
+
+      try {
+        eventSource = new EventSource(`https://ntfy.sh/${encodeURIComponent(appState.ntfyTopic)}/sse`);
+        eventSource.onopen = () => {
+          badgeDot.className = 'relative w-2 h-2 rounded-full bg-emerald-400 live-dot';
+          badgeText.textContent = `Listening: ${appState.ntfyTopic}`;
+        };
+        eventSource.onmessage = (event) => {
+          try {
+            const data = JSON.parse(event.data);
+            if (data && data.event === 'message' && data.message) {
+              playNotificationChime();
+              const lines = data.message.split('\n');
+              appState.alertsFeed.unshift({
+                symbol: data.title || 'GitHub Alert',
+                name: 'From GitHub Actions',
+                badgeLabel: '🚨 GITHUB PUSH ALERT',
+                statusType: 'target',
+                reasons: lines,
+                time: new Date().toLocaleTimeString('en-IN')
+              });
+              saveStateToStorage();
+              renderAll();
+              showToast(data.title || 'GitHub NSE Push Alert', lines[0] || data.message, 'emerald');
+            }
+          } catch (err) {}
+        };
+        eventSource.onerror = () => {
+          badgeDot.className = 'relative w-2 h-2 rounded-full bg-amber-400';
+          badgeText.textContent = `Ready (${appState.ntfyTopic})`;
+        };
+      } catch (err) {
+        badgeText.textContent = `Topic: ${appState.ntfyTopic}`;
+      }
+    }
+
+    // =========================================================================
+    // GitHub REST API Sync (Push Watchlist Config & Pull Fetched Market Data)
+    // =========================================================================
+    async function pushWatchlistToGitHub() {
+      const owner = document.getElementById('ghOwnerInput').value.trim();
+      const repo = document.getElementById('ghRepoInput').value.trim();
+      const token = document.getElementById('ghTokenInput').value.trim();
+
+      if (!owner || !repo || !token) {
+        showToast('Add GitHub Token First', 'Open the "GitHub Sync & 1-Click Deploy" tab and paste your token to sync with GitHub.', 'amber');
+        return;
+      }
+
+      appState.ghOwner = owner;
+      appState.ghRepo = repo;
+      appState.ghToken = token;
+      saveStateToStorage();
+
+      const contentStr = document.getElementById('watchlistJsonPreview').textContent;
+      const base64Content = btoa(unescape(encodeURIComponent(contentStr)));
+      const apiUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/watchlist.json`;
+
+      try {
+        let sha = undefined;
+        const getResp = await fetch(apiUrl, {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json'
+          }
+        });
+        if (getResp.status === 200) {
+          const existing = await getResp.json();
+          sha = existing.sha;
+        }
+
+        const putBody = {
+          message: `Update NSE watchlist configuration (${Object.keys(appState.watchlist).length} shares)`,
+          content: base64Content
+        };
+        if (sha) putBody.sha = sha;
+
+        const putResp = await fetch(apiUrl, {
+          method: 'PUT',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(putBody)
+        });
+
+        if (putResp.ok) {
+          showToast('Synced to GitHub!', 'Your watchlist symbols & target ₹ prices are updated on GitHub.', 'emerald');
+          renderAll();
+        } else {
+          const errData = await putResp.json().catch(() => ({}));
+          showToast('GitHub Sync Error', errData.message || `HTTP ${putResp.status}`, 'rose');
+        }
+      } catch (err) {
+        showToast('Network Error', 'Could not reach api.github.com.', 'rose');
+      }
+    }
+
+    async function pullWatchlistFromGitHub(silent = false) {
+      const owner = (document.getElementById('ghOwnerInput').value || appState.ghOwner || '').trim();
+      const repo = (document.getElementById('ghRepoInput').value || appState.ghRepo || '').trim();
+      const token = (document.getElementById('ghTokenInput').value || appState.ghToken || '').trim();
+
+      if (!owner || !repo) {
+        if (!silent) showToast('Missing Repository Info', 'Enter your GitHub Username and Repository Name in the GitHub tab.', 'rose');
+        return;
+      }
+
+      const headers = { 'Accept': 'application/vnd.github+json' };
+      if (token) headers['Authorization'] = `Bearer ${token}`;
+
+      const watchlistUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/watchlist.json`;
+      const alertsUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/alerts_history.json`;
+
+      try {
+        if (!silent) showToast('Fetching from GitHub...', `Reading latest NSE prices & alerts from ${owner}/${repo}...`, 'sky');
+        const resp = await fetch(watchlistUrl, { headers });
+        if (!resp.ok) {
+          if (!silent) showToast('Not Deployed Yet', `watchlist.json not found in ${owner}/${repo}. Click "1-Click Deploy All Files" in the GitHub tab first.`, 'amber');
+          return;
+        }
+        const data = await resp.json();
+        const decoded = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
+        const parsed = JSON.parse(decoded);
+
+        appState.watchlist = parsed;
+
+        // Also fetch alerts_history.json if present on GitHub
+        const alertsResp = await fetch(alertsUrl, { headers });
+        if (alertsResp.ok) {
+          const alertsData = await alertsResp.json();
+          const alertsDecoded = decodeURIComponent(escape(atob(alertsData.content.replace(/\n/g, ''))));
+          const parsedAlerts = JSON.parse(alertsDecoded);
+          if (Array.isArray(parsedAlerts)) {
+            appState.alertsFeed = parsedAlerts;
+          }
+        }
+
+        saveStateToStorage();
+        renderAll();
+        showToast('Fetched from GitHub!', `Loaded ${Object.keys(parsed).length} stocks & latest market metrics from GitHub.`, 'emerald');
+      } catch (err) {
+        if (!silent) showToast('Error Fetching from GitHub', 'Failed to read repository data. Check your token if the repo is private.', 'rose');
+      }
+    }
+
+    async function triggerGitHubActionsWorkflow() {
+      const owner = document.getElementById('ghOwnerInput').value.trim();
+      const repo = document.getElementById('ghRepoInput').value.trim();
+      const token = document.getElementById('ghTokenInput').value.trim();
+
+      if (!owner || !repo || !token) {
+        showToast('Missing Credentials', 'Enter GitHub Owner, Repo, and Personal Access Token first.', 'rose');
+        return;
+      }
+
+      const apiUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/actions/workflows/market_alert.yml/dispatches`;
+      try {
+        const resp = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ ref: 'main' })
+        });
+        if (resp.status === 204 || resp.ok) {
+          showToast('GitHub Scan Started!', 'GitHub Actions is now fetching live NSE prices. Click "Fetch Latest from GitHub" in ~45 seconds to view results!', 'emerald');
+        } else {
+          showToast('Trigger Notice', `GitHub returned HTTP ${resp.status}. Deploy the files first if you haven't yet.`, 'amber');
+        }
+      } catch (err) {
+        showToast('Network Error', 'Could not trigger workflow.', 'rose');
+      }
+    }
+
+    // =========================================================================
+    // Event Listeners Setup
+    // =========================================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      loadStateFromStorage();
+      renderAll();
+      connectNtfyStream();
+      pullWatchlistFromGitHub(true);
+
+      document.getElementById('copyGhPagesUrlBtn').addEventListener('click', () => {
+        const url = document.getElementById('ghPagesUrlLink').textContent;
+        copyTextToClipboard(url, 'Bookmarkable App URL');
+      });
+
+      // Navigation Tabs
+      document.querySelectorAll('.nav-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tab = btn.getAttribute('data-tab');
+          appState.activeTab = tab;
+
+          document.querySelectorAll('.nav-tab').forEach(b => {
+            const isCurr = b.getAttribute('data-tab') === tab;
+            b.className = isCurr
+              ? 'nav-tab px-4 py-2.5 text-xs sm:text-sm font-semibold border-b-2 border-emerald-400 text-emerald-400 flex items-center gap-2 whitespace-nowrap transition'
+              : 'nav-tab px-4 py-2.5 text-xs sm:text-sm font-medium border-b-2 border-transparent text-slate-400 hover:text-slate-200 flex items-center gap-2 whitespace-nowrap transition';
+          });
+
+          ['watchlist', 'alerts', 'github'].forEach(t => {
+            const el = document.getElementById(`tab-${t}`);
+            if (el) el.classList.toggle('hidden', t !== tab);
+          });
+        });
+      });
+
+      // Preset Chips (ONLY fills Symbol, Share Name, Target Price)
+      document.querySelectorAll('.preset-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+          const [sym, name, target] = chip.getAttribute('data-preset').split('|');
+          document.getElementById('inputSymbol').value = sym;
+          document.getElementById('inputName').value = name;
+          document.getElementById('inputTargetPrice').value = target;
+          showToast('Preset Filled', `Filled ${name} (${sym}) — click "Save & Sync to GitHub".`, 'sky');
+        });
+      });
+
+      // Add or Modify Stock Form (ONLY Symbol, Share Name, Target Price)
+      document.getElementById('addStockForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const rawSym = document.getElementById('inputSymbol').value;
+        const nseSym = normalizeSymbol(rawSym);
+        const name = document.getElementById('inputName').value.trim() || nseSym.replace('.NS', '');
+        const target = parseFloat(document.getElementById('inputTargetPrice').value);
+
+        if (!rawSym || isNaN(target) || target <= 0) {
+          showToast('Required Fields', 'Please enter an NSE Symbol and Target Alert Price (₹).', 'rose');
+          return;
+        }
+
+        const existing = appState.watchlist[nseSym] || {};
+        appState.watchlist[nseSym] = {
+          ...existing,
+          name,
+          target_price: target,
+          alert_below_52w_low: existing.alert_below_52w_low !== false,
+          alert_below_200dma: existing.alert_below_200dma !== false,
+          alert_below_50dma: Boolean(existing.alert_below_50dma)
+        };
+
+        saveStateToStorage();
+        renderAll();
+        e.target.reset();
+        showToast('Saved to Watchlist!', `${name} (${nseSym}) target set to ₹${target.toFixed(2)}.`, 'emerald');
+
+        if (appState.ghToken) {
+          await pushWatchlistToGitHub();
+        }
+      });
+
+      // Filter Buttons
+      document.querySelectorAll('.stock-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          appState.stockFilter = btn.getAttribute('data-filter');
+          document.querySelectorAll('.stock-filter-btn').forEach(b => {
+            const active = b.getAttribute('data-filter') === appState.stockFilter;
+            b.className = active
+              ? 'stock-filter-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+              : 'stock-filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800';
+          });
+          renderWatchlistCards();
+        });
+      });
+
+      // Reset Defaults
+      document.getElementById('resetDefaultWatchlistBtn').addEventListener('click', () => {
+        appState.watchlist = JSON.parse(JSON.stringify(INITIAL_WATCHLIST));
+        saveStateToStorage();
+        renderAll();
+        showToast('Watchlist Reset', 'Restored default NSE stocks, Gold BeES, and Silver BeES.', 'sky');
+      });
+
+      // Fetch from GitHub buttons
+      document.getElementById('fetchFromGitHubTopBtn').addEventListener('click', () => pullWatchlistFromGitHub(false));
+      document.getElementById('refreshAlertsFromGhBtn').addEventListener('click', () => pullWatchlistFromGitHub(false));
+      document.getElementById('syncWatchlistQuickBtn').addEventListener('click', pushWatchlistToGitHub);
+
+      // Sound Toggle
+      document.getElementById('soundToggleBtn').addEventListener('click', () => {
+        appState.soundEnabled = !appState.soundEnabled;
+        document.getElementById('soundIcon').textContent = appState.soundEnabled ? '🔔' : '🔕';
+        document.getElementById('soundLabel').textContent = appState.soundEnabled ? 'Sound On' : 'Muted';
+        if (appState.soundEnabled) playNotificationChime();
+      });
+
+      // Save Topic & Reconnect
+      document.getElementById('saveTopicBtn').addEventListener('click', () => {
+        const val = document.getElementById('ntfyTopicInput').value.trim().replace(/[^a-zA-Z0-9_-]/g, '');
+        if (!val) {
+          showToast('Invalid Topic', 'Enter a secret topic name using letters, numbers, or hyphens.', 'rose');
+          return;
+        }
+        appState.ntfyTopic = val;
+        saveStateToStorage();
+        renderAll();
+        connectNtfyStream();
+        showToast('Topic Updated!', `Listening for GitHub alerts on ntfy.sh/${val}`, 'emerald');
+      });
+
+      // Enable Browser Notification Permission
+      document.getElementById('enableBrowserNotifBtn').addEventListener('click', () => {
+        if (!('Notification' in window)) {
+          showToast('Not Supported', 'Browser notifications are not supported in this frame.', 'amber');
+          return;
+        }
+        Notification.requestPermission().then(perm => {
+          if (perm === 'granted') {
+            showToast('Notifications Enabled!', 'You will receive popups when GitHub sends an alert.', 'emerald');
+          } else {
+            showToast('Permission Status', `Notification permission is ${perm}.`, 'amber');
+          }
+        });
+      });
+
+      // Clear Alerts Feed
+      document.getElementById('clearAlertsBtn').addEventListener('click', () => {
+        appState.alertsFeed = [];
+        saveStateToStorage();
+        renderAll();
+      });
+
+      // Copy Buttons
+      document.getElementById('copyTopicQuickBtn').addEventListener('click', () => {
+        copyTextToClipboard(appState.ntfyTopic, 'Push Topic ID');
+      });
+      document.getElementById('copyWatchlistJsonBtn').addEventListener('click', () => {
+        copyTextToClipboard(document.getElementById('watchlistJsonPreview').textContent, 'watchlist.json');
+      });
+      document.getElementById('copyWorkflowYamlBtn').addEventListener('click', () => {
+        copyTextToClipboard(document.getElementById('workflowYamlPreview').textContent, 'market_alert.yml');
+      });
+      document.getElementById('copyPythonScriptBtn').addEventListener('click', () => {
+        copyTextToClipboard(document.getElementById('pythonScriptPreview').textContent, 'nse_dip_predictor.py');
+      });
+      document.getElementById('copyRequirementsBtn').addEventListener('click', () => {
+        copyTextToClipboard(document.getElementById('requirementsPreview').textContent, 'requirements.txt');
+      });
+
+      // 1-Click Auto-Deploy All Files to GitHub
+      document.getElementById('autoDeployAllToGhBtn').addEventListener('click', async () => {
+        const owner = document.getElementById('ghOwnerInput').value.trim();
+        const repo = document.getElementById('ghRepoInput').value.trim();
+        const token = document.getElementById('ghTokenInput').value.trim();
+        if (!owner || !repo || !token) {
+          showToast('Missing GitHub Credentials', 'Enter your GitHub Username, Repository Name, and Personal Access Token first.', 'rose');
+          return;
+        }
+        appState.ghOwner = owner;
+        appState.ghRepo = repo;
+        appState.ghToken = token;
+        saveStateToStorage();
+
+        // Serialize clean self-contained index.html for GitHub Pages hosting (without token)
+        const cloneDoc = document.documentElement.cloneNode(true);
+        const tokenEl = cloneDoc.querySelector('#ghTokenInput');
+        if (tokenEl) tokenEl.removeAttribute('value');
+        const cleanIndexHtml = '<!DOCTYPE html>\n' + cloneDoc.outerHTML;
+
+        const filesToPush = [
+          { path: 'index.html', content: cleanIndexHtml },
+          { path: 'watchlist.json', content: document.getElementById('watchlistJsonPreview').textContent },
+          { path: 'requirements.txt', content: document.getElementById('requirementsPreview').textContent },
+          { path: 'nse_dip_predictor.py', content: document.getElementById('pythonScriptPreview').textContent },
+          { path: '.github/workflows/market_alert.yml', content: document.getElementById('workflowYamlPreview').textContent }
+        ];
+
+        showToast('Deploying to GitHub...', 'Uploading project files to your repository...', 'sky');
+        let uploadedCount = 0;
+        for (const item of filesToPush) {
+          const apiUrl = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${item.path}`;
+          try {
+            let sha = undefined;
+            const getResp = await fetch(apiUrl, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' } });
+            if (getResp.status === 200) {
+              const existing = await getResp.json();
+              sha = existing.sha;
+            }
+            const putBody = {
+              message: `Deploy ${item.path} via NSE Alert Configurator`,
+              content: btoa(unescape(encodeURIComponent(item.content)))
+            };
+            if (sha) putBody.sha = sha;
+            const putResp = await fetch(apiUrl, {
+              method: 'PUT',
+              headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+              body: JSON.stringify(putBody)
+            });
+            if (putResp.ok) uploadedCount++;
+          } catch (e) {}
+        }
+        if (uploadedCount > 0) {
+          // Ensure repository is public for free GitHub Pages & enable GitHub Pages on branch 'main'
+          try {
+            await fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}`, {
+              method: 'PATCH',
+              headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+              body: JSON.stringify({ private: false })
+            });
+            await fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/pages`, {
+              method: 'POST',
+              headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+              body: JSON.stringify({ source: { branch: 'main', path: '/' } })
+            });
+          } catch (e) {}
+          showToast('Deployed & Hosted on GitHub Pages!', `Uploaded ${uploadedCount}/${filesToPush.length} files. Your URL https://${owner}.github.io/${repo}/ will be live in ~60 seconds!`, 'emerald');
+          renderAll();
+          await triggerGitHubActionsWorkflow();
+        } else {
+          showToast('Deployment Failed', 'Check that your repository exists and your token has repo & workflow scopes.', 'rose');
+        }
+      });
+
+      // GitHub Sync Buttons
+      document.getElementById('saveGhConfigBtn').addEventListener('click', () => {
+        appState.ghOwner = document.getElementById('ghOwnerInput').value.trim();
+        appState.ghRepo = document.getElementById('ghRepoInput').value.trim();
+        appState.ghToken = document.getElementById('ghTokenInput').value.trim();
+        saveStateToStorage();
+        renderAll();
+        showToast('GitHub Settings Saved', 'Credentials saved locally in your browser.', 'emerald');
+      });
+      document.getElementById('pushWatchlistToGhBtn').addEventListener('click', pushWatchlistToGitHub);
+      document.getElementById('pullWatchlistFromGhBtn').addEventListener('click', () => pullWatchlistFromGitHub(false));
+      document.getElementById('triggerGhWorkflowBtn').addEventListener('click', triggerGitHubActionsWorkflow);
+    });
+  </script>
+
+</body></html>
