@@ -12,5 +12,12 @@
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
     "alert_below_50dma": true
+  },
+  "ITC.NS": {
+    "name": "ITC LTD",
+    "target_price": 258.9,
+    "alert_below_52w_low": true,
+    "alert_below_200dma": true,
+    "alert_below_50dma": false
   }
 }
