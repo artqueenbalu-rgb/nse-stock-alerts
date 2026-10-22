@@ -1,0 +1,77 @@
+[
+  {
+    "symbol": "HDFCBANK.NS",
+    "name": "HDFC Bank",
+    "curr": 694.05,
+    "target": 1600.0,
+    "low52": 681.9,
+    "sma200": 790.48,
+    "statusType": "target",
+    "badgeLabel": "\ud83d\udea8 TARGET BUY HIT",
+    "reasons": [
+      "\ud83c\udfaf Target Hit: Rs.694.05 <= Target Rs.1600.00",
+      "\ud83d\udcc9 Near 52W Low: Rs.694.05 (52W Low: Rs.681.90)",
+      "\ud83d\udcca Below 200-DMA: Rs.694.05 < Rs.790.48"
+    ],
+    "time": "22-Oct-2026 11:02 PM IST"
+  },
+  {
+    "symbol": "TCS.NS",
+    "name": "Tata Consultancy Services",
+    "curr": 2506.9,
+    "target": 3800.0,
+    "low52": 1955.62,
+    "sma200": 2411.89,
+    "statusType": "target",
+    "badgeLabel": "\ud83d\udea8 TARGET BUY HIT",
+    "reasons": [
+      "\ud83c\udfaf Target Hit: Rs.2506.90 <= Target Rs.3800.00"
+    ],
+    "time": "22-Oct-2026 11:02 PM IST"
+  },
+  {
+    "symbol": "RELIANCE.NS",
+    "name": "Reliance Industries",
+    "curr": 1184.5,
+    "target": 1250.0,
+    "low52": 1152.2,
+    "sma200": 1337.22,
+    "statusType": "target",
+    "badgeLabel": "\ud83d\udea8 TARGET BUY HIT",
+    "reasons": [
+      "\ud83c\udfaf Target Hit: Rs.1184.50 <= Target Rs.1250.00",
+      "\ud83d\udcca Below 200-DMA: Rs.1184.50 < Rs.1337.22"
+    ],
+    "time": "22-Oct-2026 11:02 PM IST"
+  },
+  {
+    "symbol": "SILVERBEES.NS",
+    "name": "Nippon India Silver ETF",
+    "curr": 189.92,
+    "target": 82.0,
+    "low52": 132.99,
+    "sma200": 230.9,
+    "statusType": "dma",
+    "badgeLabel": "\u26a0\ufe0f BELOW 200-DMA",
+    "reasons": [
+      "\ud83d\udcca Below 200-DMA: Rs.189.92 < Rs.230.90",
+      "\ud83d\udcca Below 50-DMA: Rs.189.92 < Rs.216.33"
+    ],
+    "time": "22-Oct-2026 11:02 PM IST"
+  },
+  {
+    "symbol": "GOLDBEES.NS",
+    "name": "Nippon India ETF Gold BeES",
+    "curr": 117.35,
+    "target": 62.0,
+    "low52": 95.55,
+    "sma200": 123.74,
+    "statusType": "dma",
+    "badgeLabel": "\u26a0\ufe0f BELOW 200-DMA",
+    "reasons": [
+      "\ud83d\udcca Below 200-DMA: Rs.117.35 < Rs.123.74",
+      "\ud83d\udcca Below 50-DMA: Rs.117.35 < Rs.124.62"
+    ],
+    "time": "22-Oct-2026 11:02 PM IST"
+  }
+]

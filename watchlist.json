@@ -4,35 +4,60 @@
     "target_price": 62,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": true
+    "alert_below_50dma": true,
+    "current_price": 117.35,
+    "low_52w": 95.55,
+    "sma_200": 123.74,
+    "sma_50": 124.62,
+    "last_scanned": "22-Oct-2026 11:02 PM IST"
   },
   "SILVERBEES.NS": {
     "name": "Nippon India Silver ETF",
     "target_price": 82,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": true
+    "alert_below_50dma": true,
+    "current_price": 189.92,
+    "low_52w": 132.99,
+    "sma_200": 230.9,
+    "sma_50": 216.33,
+    "last_scanned": "22-Oct-2026 11:02 PM IST"
   },
   "RELIANCE.NS": {
     "name": "Reliance Industries",
     "target_price": 1250,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": false
+    "alert_below_50dma": false,
+    "current_price": 1184.5,
+    "low_52w": 1152.2,
+    "sma_200": 1337.22,
+    "sma_50": 1252.68,
+    "last_scanned": "22-Oct-2026 11:02 PM IST"
   },
   "TCS.NS": {
     "name": "Tata Consultancy Services",
     "target_price": 3800,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": false
+    "alert_below_50dma": false,
+    "current_price": 2506.9,
+    "low_52w": 1955.62,
+    "sma_200": 2411.89,
+    "sma_50": 2236.2,
+    "last_scanned": "22-Oct-2026 11:02 PM IST"
   },
   "HDFCBANK.NS": {
     "name": "HDFC Bank",
     "target_price": 1600,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": false
+    "alert_below_50dma": false,
+    "current_price": 694.05,
+    "low_52w": 681.9,
+    "sma_200": 790.48,
+    "sma_50": 716.85,
+    "last_scanned": "22-Oct-2026 11:02 PM IST"
   },
   "TATAMOTORS.NS": {
     "name": "Tata Motors",
