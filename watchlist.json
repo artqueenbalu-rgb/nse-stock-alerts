@@ -13,13 +13,6 @@
     "alert_below_200dma": true,
     "alert_below_50dma": true
   },
-  "RELIANCE.NS": {
-    "name": "Reliance Industries",
-    "target_price": 1250,
-    "alert_below_52w_low": true,
-    "alert_below_200dma": true,
-    "alert_below_50dma": false
-  },
   "TCS.NS": {
     "name": "Tata Consultancy Services",
     "target_price": 3800,
