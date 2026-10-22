@@ -18,8 +18,14 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
-      - name: Scan NSE Prices & Push to App
+      - name: Scan NSE Prices on GitHub & Push Alerts
         env:
           NTFY_TOPIC: "nse-alerts-in-3915"
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python nse_dip_predictor.py
+      - name: Save Fetched NSE Prices & Alert History to Repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add watchlist.json alerts_history.json || true
+          git diff --staged --quiet || git commit -m "Update live NSE market data & alerts from GitHub scan"
+          git push
