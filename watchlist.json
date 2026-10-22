@@ -4,35 +4,20 @@
     "target_price": 117.35,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": true,
-    "current_price": 117.35,
-    "low_52w": 95.55,
-    "sma_200": 123.74,
-    "sma_50": 124.62,
-    "last_scanned": "22-Oct-2026 11:24 PM IST"
+    "alert_below_50dma": true
   },
   "SILVERBEES.NS": {
     "name": "Nippon India Silver ETF",
     "target_price": 189.92,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": true,
-    "current_price": 189.92,
-    "low_52w": 132.99,
-    "sma_200": 230.9,
-    "sma_50": 216.33,
-    "last_scanned": "22-Oct-2026 11:24 PM IST"
+    "alert_below_50dma": true
   },
   "ITC.NS": {
     "name": "ITC LTD",
     "target_price": 259,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": true,
-    "current_price": 258.9,
-    "low_52w": 253.15,
-    "sma_200": 289.87,
-    "sma_50": 265.66,
-    "last_scanned": "22-Oct-2026 11:24 PM IST"
+    "alert_below_50dma": true
   }
 }
