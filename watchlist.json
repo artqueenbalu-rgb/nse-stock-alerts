@@ -18,6 +18,6 @@
     "target_price": 259,
     "alert_below_52w_low": true,
     "alert_below_200dma": true,
-    "alert_below_50dma": false
+    "alert_below_50dma": true
   }
 }
