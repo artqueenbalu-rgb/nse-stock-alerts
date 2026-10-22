@@ -15,10 +15,22 @@ def load_json(path, default):
             return default
     return default
 
+def is_nse_market_open(now_ist):
+    if now_ist.weekday() >= 5:
+        return False
+    mins = now_ist.hour * 60 + now_ist.minute
+    return (9 * 60 + 15) <= mins <= (15 * 60 + 30)
+
 def run_scan():
+    now_ist = datetime.now(IST)
+    event_name = os.getenv("GITHUB_EVENT_NAME", "manual")
+    if event_name == "schedule" and not is_nse_market_open(now_ist):
+        print(f"Outside NSE Market Hours ({now_ist.strftime('%I:%M %p IST')}). Skipping scheduled scan.")
+        return
+
     watchlist = load_json(WATCHLIST_FILE, {})
     alerts_history = load_json(ALERTS_HISTORY_FILE, [])
-    now_str = datetime.now(IST).strftime("%d-%b-%Y %I:%M %p IST")
+    now_str = now_ist.strftime("%d-%b-%Y %I:%M %p IST")
 
     for sym, cfg in watchlist.items():
         df = yf.download(sym, period="1y", interval="1d", progress=False)
