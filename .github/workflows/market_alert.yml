@@ -2,8 +2,10 @@ name: NSE Stock, Gold BeES & Silver BeES App Alert
 
 on:
   schedule:
-    - cron: '*/30 4-10 * * 1-5'
-    - cron: '15 10 * * 1-5'
+    # Runs strictly during NSE Market Hours (09:15 AM - 03:30 PM IST = 03:45 - 10:00 UTC, Mon-Fri)
+    - cron: '45 3 * * 1-5'
+    - cron: '15,45 4-9 * * 1-5'
+    - cron: '0 10 * * 1-5'
   workflow_dispatch:
 
 jobs:
@@ -21,6 +23,7 @@ jobs:
       - name: Scan NSE Prices on GitHub & Push Alerts
         env:
           NTFY_TOPIC: "nse-alerts-in-3915"
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: python nse_dip_predictor.py
       - name: Save Fetched NSE Prices & Alert History to Repo
         run: |
