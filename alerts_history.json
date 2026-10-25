@@ -2,6 +2,54 @@
   {
     "symbol": "ITC.NS",
     "name": "ITC LTD",
+    "curr": 257.9,
+    "target": 255.0,
+    "low52": 253.15,
+    "sma200": 289.24,
+    "statusType": "low52",
+    "badgeLabel": "\ud83d\udd25 52W LOW BUY ZONE",
+    "reasons": [
+      "\ud83d\udcc9 Near 52W Low: Rs.257.90 (52W Low: Rs.253.15)",
+      "\ud83d\udcca Below 200-DMA: Rs.257.90 < Rs.289.24",
+      "\ud83d\udcca Below 50-DMA: Rs.257.90 < Rs.265.24"
+    ],
+    "time": "26-Oct-2026 12:58 AM IST"
+  },
+  {
+    "symbol": "SILVERBEES.NS",
+    "name": "Nippon India Silver ETF",
+    "curr": 183.67,
+    "target": 189.92,
+    "low52": 132.99,
+    "sma200": 230.74,
+    "statusType": "target",
+    "badgeLabel": "\ud83d\udea8 TARGET BUY HIT",
+    "reasons": [
+      "\ud83c\udfaf Target Hit: Rs.183.67 <= Target Rs.189.92",
+      "\ud83d\udcca Below 200-DMA: Rs.183.67 < Rs.230.74",
+      "\ud83d\udcca Below 50-DMA: Rs.183.67 < Rs.215.56"
+    ],
+    "time": "26-Oct-2026 12:58 AM IST"
+  },
+  {
+    "symbol": "GOLDBEES.NS",
+    "name": "Nippon India ETF Gold BeES",
+    "curr": 115.9,
+    "target": 117.35,
+    "low52": 95.55,
+    "sma200": 123.77,
+    "statusType": "target",
+    "badgeLabel": "\ud83d\udea8 TARGET BUY HIT",
+    "reasons": [
+      "\ud83c\udfaf Target Hit: Rs.115.90 <= Target Rs.117.35",
+      "\ud83d\udcca Below 200-DMA: Rs.115.90 < Rs.123.77",
+      "\ud83d\udcca Below 50-DMA: Rs.115.90 < Rs.124.43"
+    ],
+    "time": "26-Oct-2026 12:58 AM IST"
+  },
+  {
+    "symbol": "ITC.NS",
+    "name": "ITC LTD",
     "curr": 257.15,
     "target": 255.0,
     "low52": 253.15,
