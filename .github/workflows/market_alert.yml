@@ -22,7 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Scan NSE Prices on GitHub & Push Alerts
         env:
-          NTFY_TOPIC: "nse-alerts-in-2076"
+          NTFY_TOPIC: "artqueenbalu-nse-alerts"
           GITHUB_EVENT_NAME: ${{ github.event_name }}
         run: python nse_dip_predictor.py
       - name: Save Fetched NSE Prices & Alert History to Repo
