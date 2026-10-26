@@ -4,7 +4,7 @@ from datetime import datetime, timezone, timedelta
 IST = timezone(timedelta(hours=5, minutes=30))
 WATCHLIST_FILE = "watchlist.json"
 ALERTS_HISTORY_FILE = "alerts_history.json"
-NTFY_TOPIC = os.getenv("NTFY_TOPIC", "nse-alerts-in-2076").strip()
+NTFY_TOPIC = os.getenv("NTFY_TOPIC", "artqueenbalu-nse-alerts").strip()
 NL = chr(10)
 
 def load_json(path, default):
